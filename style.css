@@ -128,6 +128,11 @@ footer .footer-links a {
     .card img {
         width: 100%;
     }
+    footer .footer-info{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media screen and (min-width:577px) and (max-width:992px) {
