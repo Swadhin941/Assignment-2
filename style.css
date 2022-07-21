@@ -1,0 +1,159 @@
+.top-banner {
+    height: auto;
+    width: 80%;
+    background-color: black;
+    margin: 50px auto;
+    padding-top: 30px;
+    padding-left: 40px;
+    border-radius: 20px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space;
+}
+h1, h4,h2,h3{
+    font-family: 'Poppins', sans-serif;
+}
+.banner-text {
+    color: whitesmoke;
+    /* font-size: 1.9em; */
+}
+
+.top-banner div {
+    width: 50%;
+}
+
+.top-banner div img {
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding-top: 30px;
+    /* padding-left: 30px; */
+    padding-right: 40px;
+    justify-content: space-between;
+}
+
+.content .option {
+    background-color: black;
+    height: 180px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.content .option button {
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px 40px;
+    border-radius: 5px;
+    margin: 4px;
+}
+
+.content-element {
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.card img {
+    width: 100%;
+}
+
+footer {
+    height: 400px;
+    background-color: black;
+    width: 100%;
+    padding-top: 50px;
+}
+
+footer .footer-info {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+
+}
+
+footer .footer-links a {
+    margin: 10px;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:576px) {
+    .top-banner {
+        flex-direction: column;
+    }
+
+    .top-banner div {
+        width: 100%;
+    }
+
+    .content {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content .option {
+        background-color: white;
+    }
+
+    .content .option button {
+        background-color: whitesmoke;
+
+    }
+
+    .content-element {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    .content-element div {
+        width: 100%;
+    }
+
+    .card img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content .option {
+        background-color: white;
+        flex-direction: row;
+    }
+
+    .content .option button {
+        padding: 10px 40px;
+        height: 40px;
+    }
+
+    .content-element {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer .footer-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
