@@ -65,7 +65,7 @@ h1, h4,h2,h3{
 }
 
 footer {
-    height: 400px;
+    height: auto;
     background-color: black;
     width: 100%;
     padding-top: 50px;
@@ -78,9 +78,10 @@ footer .footer-info {
 }
 
 footer .footer-links {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
-    font-size: 2em;
+    font-size: 2em; 
 
 }
 
@@ -90,6 +91,9 @@ footer .footer-links a {
     border: 1px solid white;
     padding: 10px;
     border-radius: 10px;
+}
+button{
+    cursor: pointer;
 }
 
 @media screen and (max-width:576px) {
@@ -116,6 +120,7 @@ footer .footer-links a {
     }
 
     .content-element {
+        margin-left: 0;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
@@ -158,7 +163,18 @@ footer .footer-links a {
 
     footer .footer-info {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
         justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
     }
+    footer .footer-info h4{
+        margin: 10px;
+    }
+}
+@media screen and (min-width:993px) {
+    .banner-text h1{
+        font-size: 2.5em;
+    }
+    
 }
